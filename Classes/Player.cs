@@ -20,10 +20,7 @@ public class Player:IPlayer {
     public bool IsFool {get;set;}
 
     //return cards in hand
-    public List<Card> GetCards(){
-        return playerHand.cards;
-    }
-    
+    public List<Card> GetCards()=> playerHand.cards;
     //draw cards from deck
     public void RefillHand(Deck deck){   
         if(playerHand.cards.Count==0){
@@ -75,8 +72,9 @@ public class Player:IPlayer {
     }
     
     //attack chosen card
-    public void Attack(Table gameTable){
+    public Card Attack(Table gameTable){
         bool isAttacking = CanBeAttacking(playerHand.cards,gameTable);
+        Card attackingCard = new Card();
         if(isAttacking){
             List<Card> attackingCards = GetCardsForAttack(gameTable);
             if(attackingCards.Count!=0){
@@ -88,11 +86,12 @@ public class Player:IPlayer {
                     if(int.TryParse(number, out var index)){
                         if((index-1)>=0&&(index-1)<attackingCards.Count){
                             settingNumber=true;
-                            Card attackingCard = attackingCards[index-1];
+                            attackingCard = attackingCards[index-1];
                             Console.WriteLine($"\nВы походили картой: {attackingCard}");
                             gameTable.AddCardToTable(attackingCard);
                             playerHand.RemoveCardFromHand(attackingCard);
                             attackingCards.Remove(attackingCard);
+                            return attackingCard;
                         } 
                         else{
                             Console.WriteLine("Нет такого номера. Введите порядковый номер повторно: ");
@@ -103,6 +102,10 @@ public class Player:IPlayer {
                     }
                 }       
             }
+            return attackingCard;
+        }
+        else{
+            return attackingCard;
         }
     }
     
