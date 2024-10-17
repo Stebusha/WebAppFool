@@ -38,6 +38,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xJbWFnZUJ1dHRvblRyeS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/МиненковаНА/Projects/WebAppFool/BlazorWebApp/Components/Pages/ScoreTable.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTY29yZVRhYmxlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/МиненковаНА/Projects/WebAppFool/BlazorWebApp/Components/Pages/TheFool.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xUaGVGb29sLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/МиненковаНА/Projects/WebAppFool/BlazorWebApp/Components/Pages/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXZWF0aGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 

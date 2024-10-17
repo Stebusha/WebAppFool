@@ -7,7 +7,7 @@ namespace BlazorWebApp.Models
         //public Guid Id{get; private set;}
         public string ImageUrl{get; set;}
         public bool IsPlayable{get; set;}
-
+        public Card(){}
         public Card (SuitType _suit, RankType _rank){
             Suit = _suit;
             Rank = _rank;
