@@ -1,8 +1,8 @@
 namespace BlazorWebApp.Models
 {
     public class Player{
-        List<Card>? inHand;
-        PlayerType? playerType;
+        public List<Card>? inHand{get;set;}
+        public PlayerType playerType{get;set;}
         public string Name{get; set;} = string.Empty;
         public int TurnNumber{get;set;}
         public bool Taken{get;set;}
